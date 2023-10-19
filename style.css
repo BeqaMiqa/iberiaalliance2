@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.d {
+    position: fixed;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    transition: transform 0.3s; /* Add transition effect for folding */
+    transform: translateY(0); /* Initialize transformation */
+   z-index: 99999;
+}
+
+.d div {
+    display: flex; /* Apply flexbox to inner divs */
+    align-items: center; /* Vertically center the text */
+    margin-left: 0px;
+    height: 100%;
+    justify-content: center; /* Horizontally center the text */
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color 0.3s, color 0.3s ease; /* Smooth transition effect */
+}
+.d p{
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.d div:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Customize the track (the area where the scrollbar moves) */
+::-webkit-scrollbar {
+    width: 2px; /* Width of the scrollbar */
+    z-index: -1;
+}
+::-webkit-scrollbar:hover {
+    width: 5px; /* Width of the scrollbar */
+    z-index: -1;
+}
+/* Customize the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #000000; /* Color of the thumb */
+    z-index: -1;
+}
+
+/* Customize the track (the background of the scrollbar) on hover */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    z-index: -1;
+}
+
+/* Customize the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000000; /* Color of the thumb on hover */
+    width: 5px;
+}
+.welcome {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+
+.welcome img {
+    width: 100%;
+    height: 100%;
+}
+
+.w {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Sarala', sans-serif; */
+    color: white;
+    position: absolute; /* Set the text to absolute positioning */
+    font-size: 50px;
+    /* Adjust as needed to vertically center the text */
+    left: 35%;
+    bottom: 0%;
+     /* Adjust as needed to horizontally center the text */
+    transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
+    padding: 10px;
+}
+
+
+/* 
+.co{
+    box-shadow:0 10px 10px 10px #00000064;
+    height: 200px;
+    width: 500px;
+    border-radius: 7px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    top: 800px;
+    left: 40px;
+} */
+.co {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap as needed for spacing between the div elements */
+    margin-left: 90px;
+}
+
+.co div {
+    flex: 1;
+    box-shadow: 0 10px 10px 10px #00000064;
+    height: 200px;
+    border-radius: 7px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-image: linear-gradient(rgb(0, 132, 255), rgb(119, 0, 255));
+    border-image-slice: 1;
+    border-image-width: 3px;
+    border-image-outset: 0; */
+    
+}
+.vg{
+    position: absolute;
+    top: 810px;
+    left: 40px;
+    z-index: -1;
+}
+.vg1{
+    position: absolute;
+    top: 810px;
+    left: 550px;
+    z-index: -1;
+}
+.vg2{
+    position: absolute;
+    top: 810px;
+    left: 970px;
+    z-index: -1;
+}
+.line{
+    position: absolute;
+    top: 760px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    z-index: -1;
+}
+.lns{
+    display: inline-block;
+    height: 100%;
+}
+
+.contacts{
+    position: absolute;
+    width: 100%;
+    height:500px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.icon{
+    fill: rgb(107, 117, 132);
+    background-color: rgba(58, 16, 226, 0);
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s ease;
+}
+.icon#i:hover{
+    fill: rgb(0, 106, 255);
+}
+.icon#i1:hover{
+    fill: #0A66C2;
+}
+.icon#i2:hover path {
+    fill: url(#gradient);
+}
+.icon#i3:hover path {
+    fill:  #FF0000;
+}
+
+
+
+
+a{
+    color: transparent;
+}
+
+
+
+
+
